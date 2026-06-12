@@ -1,0 +1,9 @@
+customer_id,full_name,email,phone,dob,ssn,address,city,zip,plan,credit_card,notes
+1001,John Smith,john.smith@email.com,555-123-4567,03/15/1985,123-45-6789,123 Main St,Springfield,62701,pro,4111-1111-1111-1111,Loyal customer since 2020
+1002,Maria Garcia,mgarcia@company.net,+1 (800) 555-0199,07/22/1990,987-65-4321,456 Oak Ave,Chicago,60601,enterprise,,Escalated support case
+1003,Bob Johnson,bob.j@gmail.com,800.555.0100,12/01/1978,111-22-3333,789 Pine Rd,Houston,77001,free,,First purchase pending
+1004,Sarah Chen,schen@work.org,555-246-8101,,,321 Elm St,New York,10001,pro,5500-0000-0000-0004,VIP account
+1005,Dave Kim,dkim@example.com,+44 20 7946 0958,09/30/1995,,654 Maple Ln,London,SW1A 1AA,enterprise,,UK customer - GDPR applies
+1006,Patricia Nguyen,pnguyen@test.io,555-369-2580,05/12/1982,456-78-9012,987 Cedar Blvd,Seattle,98101,pro,,Account notes: SSN verified
+1007,Tom Wilson,twilson@sample.net,555-111-2222,,,135 Birch Way,Denver,80201,free,,Standard account
+1008,Emma Rodriguez,erod@example.com,555-444-3333,11/28/2000,789-01-2345,246 Spruce Dr,Miami,33101,enterprise,4532015112830366,Renewal due next month
