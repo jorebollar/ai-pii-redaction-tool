@@ -1,0 +1,150 @@
+{
+  "file_path": "sample_pii_data.csv",
+  "timestamp": "2026-06-12T22:48:05.818352",
+  "mode": "redact",
+  "total_rows": 8,
+  "total_columns": 12,
+  "pii_columns": [
+    "email",
+    "phone",
+    "dob",
+    "ssn",
+    "zip",
+    "credit_card",
+    "full_name",
+    "address",
+    "city"
+  ],
+  "column_summaries": [
+    {
+      "column": "email",
+      "pii_types": [
+        "EMAIL"
+      ],
+      "hit_count": 8,
+      "severity": "high",
+      "detection_methods": [
+        "regex"
+      ],
+      "recommended_action": "Redact all values in this column before sharing."
+    },
+    {
+      "column": "phone",
+      "pii_types": [
+        "PHONE_US"
+      ],
+      "hit_count": 7,
+      "severity": "high",
+      "detection_methods": [
+        "regex"
+      ],
+      "recommended_action": "Redact all values in this column before sharing."
+    },
+    {
+      "column": "dob",
+      "pii_types": [
+        "DOB_US"
+      ],
+      "hit_count": 6,
+      "severity": "medium",
+      "detection_methods": [
+        "regex"
+      ],
+      "recommended_action": "Review and consider redaction depending on use case."
+    },
+    {
+      "column": "ssn",
+      "pii_types": [
+        "SSN"
+      ],
+      "hit_count": 5,
+      "severity": "high",
+      "detection_methods": [
+        "regex"
+      ],
+      "recommended_action": "Redact all values in this column before sharing."
+    },
+    {
+      "column": "zip",
+      "pii_types": [
+        "ZIP_US"
+      ],
+      "hit_count": 7,
+      "severity": "low",
+      "detection_methods": [
+        "regex"
+      ],
+      "recommended_action": "Low risk \u2014 document in data inventory."
+    },
+    {
+      "column": "credit_card",
+      "pii_types": [
+        "CREDIT_CARD"
+      ],
+      "hit_count": 3,
+      "severity": "high",
+      "detection_methods": [
+        "regex"
+      ],
+      "recommended_action": "Redact all values in this column before sharing."
+    },
+    {
+      "column": "full_name",
+      "pii_types": [
+        "NAME"
+      ],
+      "hit_count": 8,
+      "severity": "high",
+      "detection_methods": [
+        "column_hint"
+      ],
+      "recommended_action": "Redact all values in this column before sharing."
+    },
+    {
+      "column": "address",
+      "pii_types": [
+        "ADDRESS"
+      ],
+      "hit_count": 8,
+      "severity": "high",
+      "detection_methods": [
+        "column_hint"
+      ],
+      "recommended_action": "Redact all values in this column before sharing."
+    },
+    {
+      "column": "city",
+      "pii_types": [
+        "ADDRESS"
+      ],
+      "hit_count": 8,
+      "severity": "high",
+      "detection_methods": [
+        "column_hint"
+      ],
+      "recommended_action": "Redact all values in this column before sharing."
+    }
+  ],
+  "total_pii_hits": 60,
+  "redacted_values": 60,
+  "high_severity_columns": [
+    "email",
+    "phone",
+    "ssn",
+    "credit_card",
+    "full_name",
+    "address",
+    "city"
+  ],
+  "ai_findings": [
+    "[AI] notes: Free-text notes column contains an embedded reference to SSN verification status, which could indirectly expose sensitive identity-verification context \u2014 consider redacting notes before sharing externally. (severity: medium)",
+    "[AI] address: Combined with city and zip, these fields enable re-identification of individuals even after other PII is redacted \u2014 recommend treating as a quasi-identifier set under GDPR. (severity: medium)"
+  ],
+  "compliance_notes": [
+    "\u26a0\ufe0f  HIGH SEVERITY PII detected \u2014 review sharing permissions immediately.",
+    "GDPR Art. 5: Personal data should be processed with appropriate security.",
+    "Ensure a Data Processing Agreement is in place before sharing this file.",
+    "Audit trail generated at 2026-06-12T22:48:05.818332 \u2014 retain for 3 years.",
+    "Consider data minimization: only share columns necessary for the intended purpose."
+  ]
+}

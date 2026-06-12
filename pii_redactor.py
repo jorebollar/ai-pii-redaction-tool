@@ -130,7 +130,7 @@ def detect_by_regex(df: pd.DataFrame, whitelist: set[str]) -> list[PiiHit]:
         col_str = df[col].dropna().astype(str)
         for pattern_def in PII_PATTERNS:
             rx = re.compile(pattern_def.pattern, re.IGNORECASE)
-            matches = col_str[col_str.str.contains(rx, regex=True)]
+            matches = col_str[col_str.str.contains(rx, regex=True, na=False)]
             for idx in matches.index:
                 hits.append(PiiHit(
                     column=col,

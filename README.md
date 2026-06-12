@@ -2,6 +2,11 @@
 
 Scans CSV files for Personally Identifiable Information using regex pattern matching + Claude AI, redacts or pseudonymizes sensitive fields, and produces a GDPR/HIPAA compliance audit trail.
 
+![Demo screenshot](demo.png)
+
+> 📄 See [`sample_output.txt`](sample_output.txt) for a full sample run, [`sample_pii_data_redacted.csv`](sample_pii_data_redacted.csv) for redacted output, and [`sample_pii_data_pii_audit.json`](sample_pii_data_pii_audit.json) for the compliance audit trail — no need to run anything to see what this tool produces.
+
+
 ## Features
 
 - 🔍 13 built-in regex patterns (SSN, email, phone, credit card, IBAN, passport, DOB, IP, API keys...)
