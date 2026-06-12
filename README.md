@@ -1,5 +1,7 @@
 # PII Detection & Redaction in CSV Exports
 
+![Demo output](demo_output.png)
+
 Scans CSV files for Personally Identifiable Information using regex pattern matching + Claude AI, redacts or pseudonymizes sensitive fields, and produces a GDPR/HIPAA compliance audit trail.
 
 ![Demo screenshot](demo.png)
